@@ -134,6 +134,11 @@ button {
 .flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.margin {
+    margin-bottom: 1.5rem;
 }
 
 .shadow-fb::before {
@@ -207,6 +212,8 @@ body {
     padding-block: 1.5rem;
 }
 
+/* section 1 */
+
 header {
     background-color: var(--clr-top-bg-pattern-light);
 }
@@ -225,19 +232,17 @@ h1 {
     padding-top: 1rem;
 }
 
-button {
+span {
     width: 3rem;
     border-radius: 10rem;
     background-color: var(--clr-toggle-light);
-
-    position: relative;
+    text-align: left;
+    padding-left: .4rem;
+    padding-top: .1rem;
 }
 
 .theme-toggle {
     color: var(--clr-bg-light);
-    position: absolute;
-    left: .2rem;
-    bottom: .18rem;
 }
 
 .followers-stats {
@@ -281,4 +286,36 @@ button {
     position: absolute;
     left: -.7rem;
     top: .35rem;
+}
+
+
+/* section 2 */
+
+h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.overview-card {
+    padding: 1.5rem;
+    border-radius: .4rem;
+}
+
+
+
+@media (min-width: 700px) {
+
+    .intro-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .intro {
+        border: none;
+    }
+
+    .toggle-container {
+        gap: 1rem;
+    }
 }
