@@ -32,8 +32,8 @@
     /* font */
     --ff-main: "Inter", sans-serif;
 
+    --fs-300: .65rem;
     --fs-400: 0.875rem;
-    --fs-500: .9rem;
     --fs-600: 1.5rem;
     --fs-900: 2.5rem;
 
@@ -97,8 +97,8 @@ button {
     background-color: var(--clr-card-bg-light);
 }
 
-.fs-500 {
-    font-size: var(--fs-500);
+.fs-300 {
+    font-size: var(--fs-300);
 }
 
 .fs-600 {
@@ -127,7 +127,7 @@ button {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1rem;
 }
 
@@ -136,12 +136,32 @@ button {
     justify-content: space-between;
 }
 
-.shadow-fb {
-    box-shadow: 0 -4px var(--clr-primary-facebook);
+.shadow-fb::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: var(--clr-primary-facebook);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    border-radius: inherit;
 }
 
-.shadow-twitter {
-    box-shadow: 0 -4px var(--clr-primary-twitter);
+.shadow-twitter::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: var(--clr-primary-twitter);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    border-radius: inherit;
 }
 
 .shadow-insta::before {
@@ -150,12 +170,115 @@ button {
     height: 4px;
     width: 100%;
     background: var(--clr-primary-instagram);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    border-radius: inherit;
 }
 
-.shadow-yt {
-    box-shadow: 0 -4px var(--clr-primary-youtube);
+.shadow-yt::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: var(--clr-primary-youtube);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    border-radius: inherit;
 }
 
 body {
     font-family: var(--ff-main);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    background-color: var(--clr-bg-light);
+
+    text-align: center;
+}
+
+.container {
+    width: min(80%, 1440px);
+    margin-inline: auto;
+    padding-block: 1.5rem;
+}
+
+header {
+    background-color: var(--clr-top-bg-pattern-light);
+}
+
+h1 {
+    font-size: var(--fs-600);
+}
+
+.intro {
+    text-align: left;
+    border-bottom: solid 1px var(--clr-text-secondary-light);
+    padding-bottom: 1rem;
+}
+
+.toggle-container {
+    padding-top: 1rem;
+}
+
+button {
+    width: 3rem;
+    border-radius: 10rem;
+    background-color: var(--clr-toggle-light);
+
+    position: relative;
+}
+
+.theme-toggle {
+    color: var(--clr-bg-light);
+    position: absolute;
+    left: .2rem;
+    bottom: .18rem;
+}
+
+.followers-stats {
+    margin-block: 2rem;
+}
+
+.followers-stats .flex {
+    justify-content: center;
+    gap: .4rem;
+}
+
+.card {
+    padding: 1rem;
+    position: relative;
+
+    border-radius: .5rem .5rem 0 0;
+}
+
+.followers-number {
+    line-height: 1;
+    margin-block: 1rem;
+}
+
+.increase {
+    position: relative;
+
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+
+    display: inline-block;
+}
+
+.increase::before {
+    content: '';
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    background-image: url(images/icon-up.svg);
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: -.7rem;
+    top: .35rem;
 }
