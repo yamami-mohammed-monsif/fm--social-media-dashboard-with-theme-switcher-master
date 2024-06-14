@@ -7,6 +7,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- font-family embed code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,10 +21,10 @@
     <header>
       <div>
         <h1>Social Media Dashboard</h1>
-        <p>Total Followers: 23,004</p>
+        <p class="secondary-clr fw-bold">Total Followers: 23,004</p>
       </div>
       <div>
-        <p>Dark Mode</p>
+        <p class="secondary-clr fw-bold">Dark Mode</p>
         <button>toggle</button>
       </div>
     </header>
@@ -26,110 +32,112 @@
     <main>
 
       <section>
-        <div class="followers-stats | display-grid">
-          <div>
-            <div>
+        <div class="followers-stats grid">
+          <div class="bg-card shadow-fb">
+            <div class="">
               <img src="images/icon-facebook.svg" alt="">
-              <p class="account-name">@nathanf</p>
+              <p class="secondary-clr">@nathanf</p>
             </div>
             <div>
-              <p class="followers-number">1987</p>
-              <p class="followers">Followers</p>
+              <p class="fs-900 fw-bold">1987</p>
+              <p class="secondary-clr fs-500 space-letter uppercase">Followers</p>
             </div>
-            <p class="stats increase">12 Today</p>
+            <p class="stats increase clr-increase">12 Today</p>
           </div>
 
-          <div>
+          <div class="bg-card shadow-twitter">
             <div>
               <img src="images/icon-twitter.svg" alt="">
-              <p class="account-name">@nathanf</p>
+              <p class="secondary-clr">@nathanf</p>
             </div>
             <div>
-              <p class="followers-number">1044</p>
-              <p class="followers">Followers</p>
+              <p class="fs-900 fw-bold">1044</p>
+              <p class="secondary-clr fs-500 space-letter uppercase">Followers</p>
             </div>
-            <p class="stats increase">99 Today</p>
+            <p class="stats increase clr-increase">99 Today</p>
           </div>
 
-          <div>
+          <div class="bg-card shadow-insta">
             <div>
               <img src="images/icon-instagram.svg" alt="">
-              <p class="account-name">@realnathanf</p>
+              <p class="secondary-clr">@realnathanf</p>
             </div>
             <div>
-              <p class="followers-number">11K</p>
-              <p class="followers">Followers</p>
+              <p class="fs-900 fw-bold">11K</p>
+              <p class="secondary-clr fs-500 space-letter uppercase">Followers</p>
             </div>
-            <p class="stats increase">1099 Today</p>
+            <p class="stats increase clr-increase">1099 Today</p>
+          </div>
+
+          <div class="bg-card shadow-yt">
+            <div>
+              <img src="images/icon-youtube.svg" alt="">
+              <p class="secondary-clr">Nathan F.</p>
+            </div>
+            <div>
+              <p class="fs-900 fw-bold">8239</p>
+              <p class="secondary-clr fs-500 space-letter uppercase">Subscribers</p>
+            </div>
+            <p class="stats decrease clr-decrease">144 Today</p>
           </div>
         </div>
 
-        <div>
-          <div>
-            <img src="images/icon-twitter.svg" alt="">
-            <p class="account-name">Nathan F.</p>
-          </div>
-          <div>
-            <p class="followers-number">8239</p>
-            <p class="followers">Subscribers</p>
-          </div>
-          <p class="stats decrease">144 Today</p>
-        </div>
+        
       </section>
 
 
+      <!-- overview - today section -->
       <section>
-        <div class="overview-today | display-grid">
-          <h2>Overview - Today</h2>
-
-          <div class="display-flex">
+        <h2 class="secondary-clr">Overview - Today</h2>
+        <div class="overview-today grid">
+          <div class="flex bg-card">
             <div>
-              <p>Page Views</p>
-              <p class="number">87</p>
+              <p class="secondary-clr">Page Views</p>
+              <p class="fs-600 fw-bold">87</p>
             </div>
             <div>
               <img src="images/icon-facebook.svg" alt="">
-              <p class="stats increase">3%</p>
+              <p class="stats increase clr-increase">3%</p>
             </div>
           </div>
 
-          <div class="display-flex">
+          <div class="flex bg-card">
             <div>
-              <p>Likes</p>
-              <p class="number">52</p>
+              <p class="secondary-clr">Likes</p>
+              <p class="fs-600 fw-bold">52</p>
             </div>
             <div>
               <img src="images/icon-facebook.svg" alt="">
-              <p class="stats decrease">2%</p>
+              <p class="stats decrease clr-decrease">2%</p>
             </div>
           </div>
 
-          <div>
+          <div class="flex bg-card">
             <div>
-              <p>Likes</p>
-              <p class="number">5462</p>
+              <p class="secondary-clr">Likes</p>
+              <p class="fs-600 fw-bold">5462</p>
             </div>
             <div>
               <img src="images/icon-instagram.svg" alt="">
-              <p class="stats increase">2257%</p>
+              <p class="stats increase clr-increase">2257%</p>
             </div>
           </div>
 
-          <div>
+          <div class="flex bg-card">
             <div>
-              <p>Profile Views</p>
-              <p class="number">52K</p>
+              <p class="secondary-clr">Profile Views</p>
+              <p class="fs-600 fw-bold">52K</p>
             </div>
             <div>
               <img src="images/icon-instagram.svg" alt="">
-              <p class="stats increase">1375%</p>
+              <p class="stats increase clr-increase">1375%</p>
             </div>
           </div>
 
-          <div>
+          <div class="flex bg-card">
             <div>
-              <p>Retweets</p>
-              <p class="number">117</p>
+              <p class="secondary-clr">Retweets</p>
+              <p class="fs-600 fw-bold">117</p>
             </div>
             <div>
               <img src="images/icon-twitter.svg" alt="">
@@ -137,36 +145,36 @@
             </div>
           </div>
 
-          <div>
+          <div class="flex bg-card">
             <div>
-              <p>Likes</p>
-              <p class="number">507</p>
+              <p class="secondary-clr">Likes</p>
+              <p class="fs-600 fw-bold">507</p>
             </div>
             <div>
               <img src="images/icon-twitter.svg" alt="">
-              <p class="stats increase">553%</p>
+              <p class="stats increase clr-increase">553%</p>
             </div>
           </div>
 
-          <div>
+          <div class="flex bg-card">
             <div>
-              <p>Likes</p>
-              <p class="number">107</p>
+              <p class="secondary-clr">Likes</p>
+              <p class="fs-600 fw-bold">107</p>
             </div>
             <div>
               <img src="images/icon-youtube.svg" alt="">
-              <p class="stats decrease">19%</p>
+              <p class="stats decrease clr-decrease">19%</p>
             </div>
           </div>
 
-          <div>
+          <div class="flex bg-card">
             <div>
-              <p>Total Views</p>
-              <p class="number">1407</p>
+              <p class="secondary-clr">Total Views</p>
+              <p class="fs-600 fw-bold">1407</p>
             </div>
             <div>
               <img src="images/icon-youtube.svg" alt="">
-              <p class="stats decrease">12%</p>
+              <p class="stats decrease clr-decrease">12%</p>
             </div>
           </div>
 
