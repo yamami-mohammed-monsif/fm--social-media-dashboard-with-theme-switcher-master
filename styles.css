@@ -42,6 +42,18 @@
 
 }
 
+body.dark {
+    --clr-bg-light: var(--clr-bg-dark);
+        --clr-top-bg-pattern-light: var(--clr-top-bg-pattern-dark);
+        --clr-card-bg-light: var(--clr-card-bg-dark);
+        --clr-text-secondary-light: var(--clr-text-secondary-dark);
+        --clr-text-main-light: var(--clr-text-main-dark);
+
+        --clr-toggle-light: var(--clr-toggle-dark);
+
+        transition: 600ms;
+}
+
     /* reset */
 
 /* Box sizing rules */
@@ -200,10 +212,13 @@ button {
 body {
     font-family: var(--ff-main);
     font-size: var(--fs-400);
+    color: var(--clr-text-main-light);
     font-weight: var(--fw-regular);
     background-color: var(--clr-bg-light);
 
     text-align: center;
+
+    transition: 600ms;
 }
 
 .container {
@@ -235,15 +250,22 @@ h1 {
 span {
     width: 3rem;
     border-radius: 10rem;
-    background-color: var(--clr-toggle-light);
+    background: var(--clr-toggle-light);
     text-align: left;
-    padding-left: .4rem;
+    padding-left: .3rem;
     padding-top: .1rem;
 }
 
 .theme-toggle {
     color: var(--clr-bg-light);
+    transition: 600ms;
 }
+
+.theme-toggle.active {
+    transform: translateX(160%);
+    transition: 600ms;
+}
+
 
 .followers-stats {
     margin-block: 2rem;
@@ -276,11 +298,24 @@ span {
 }
 
 .increase::before {
+    
+}
+
+.decrease {
+    position: relative;
+
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+
+    display: inline-block;
+}
+
+.decrease::before {
     content: '';
     display: block;
     width: .5rem;
     height: .5rem;
-    background-image: url(images/icon-up.svg);
+    background-image: url(images/icon-down.svg);
     background-repeat: no-repeat;
 
     position: absolute;
