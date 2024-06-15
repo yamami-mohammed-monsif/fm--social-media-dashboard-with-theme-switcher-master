@@ -17,6 +17,7 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 ## Demo
 
+https://yamami-mohammed-monsif.github.io/fm--social-media-dashboard-with-theme-switcher-master/
 
 ## Description
 
@@ -39,6 +40,14 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 -  Fonts for typography
 
 ## Installation
+
+- **Clone the repository:**
+   ```bash
+   git clone https://github.com/yamami-mohammed-monsif/fm--social-media-dashboard-with-theme-switcher-master.git
+
+   cd fm--social-media-dashboard-with-theme-switcher-master
+
+   open index.html
 
 ## Usage
 
