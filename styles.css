@@ -298,7 +298,16 @@ span {
 }
 
 .increase::before {
-    
+    content: '';
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    background-image: url(images/icon-up.svg);
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: -.7rem;
+    top: .35rem;
 }
 
 .decrease {
