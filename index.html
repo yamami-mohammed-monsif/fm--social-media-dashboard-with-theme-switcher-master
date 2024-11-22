@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- font-family embed code -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- font awsome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-family embed code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="light">
     <header>
       <div class="container">
-        
         <div class="intro-container">
           <div class="intro">
             <h1>Social Media Dashboard</h1>
@@ -31,7 +43,11 @@
           <div class="flex toggle-container">
             <p class="secondary-clr fw-bold">Dark Mode</p>
             <span>
-              <i class="fa-solid fa-circle theme-toggle" data-theme="light" id="toggle-theme-btn"></i>
+              <i
+                class="fa-solid fa-circle theme-toggle"
+                data-theme="light"
+                id="toggle-theme-btn"
+              ></i>
             </span>
           </div>
         </div>
@@ -39,70 +55,73 @@
     </header>
 
     <main>
-
       <div class="container">
-
         <!-- section 1 followers-stats -->
         <section>
           <div class="followers-stats grid">
             <div class="card bg-card shadow-fb">
               <div class="flex">
-                <img src="images/icon-facebook.svg" alt="">
+                <img src="images/icon-facebook.svg" alt="" />
                 <p class="secondary-clr">@nathanf</p>
               </div>
               <div class="followers-number">
                 <p class="fs-900 fw-bold">1987</p>
-                <p class="secondary-clr fs-300 space-letter uppercase">Followers</p>
+                <p class="secondary-clr fs-300 space-letter uppercase">
+                  Followers
+                </p>
               </div>
               <p class="stats increase clr-increase">12 Today</p>
             </div>
             <div class="card bg-card shadow-twitter">
               <div class="flex">
-                <img src="images/icon-twitter.svg" alt="">
+                <img src="images/icon-twitter.svg" alt="" />
                 <p class="secondary-clr">@nathanf</p>
               </div>
               <div class="followers-number">
                 <p class="fs-900 fw-bold">1044</p>
-                <p class="secondary-clr fs-300 space-letter uppercase">Followers</p>
+                <p class="secondary-clr fs-300 space-letter uppercase">
+                  Followers
+                </p>
               </div>
               <p class="stats increase clr-increase">99 Today</p>
             </div>
             <div class="card bg-card shadow-insta">
               <div class="flex">
-                <img src="images/icon-instagram.svg" alt="">
+                <img src="images/icon-instagram.svg" alt="" />
                 <p class="secondary-clr">@realnathanf</p>
               </div>
               <div class="followers-number">
                 <p class="fs-900 fw-bold">11K</p>
-                <p class="secondary-clr fs-300 space-letter uppercase">Followers</p>
+                <p class="secondary-clr fs-300 space-letter uppercase">
+                  Followers
+                </p>
               </div>
               <p class="stats increase clr-increase">1099 Today</p>
             </div>
             <div class="card bg-card shadow-yt">
               <div class="flex">
-                <img src="images/icon-youtube.svg" alt="">
+                <img src="images/icon-youtube.svg" alt="" />
                 <p class="secondary-clr">Nathan F.</p>
               </div>
               <div class="followers-number">
                 <p class="fs-900 fw-bold">8239</p>
-                <p class="secondary-clr fs-300 space-letter uppercase">Subscribers</p>
+                <p class="secondary-clr fs-300 space-letter uppercase">
+                  Subscribers
+                </p>
               </div>
               <p class="stats decrease clr-decrease">144 Today</p>
             </div>
           </div>
-        
         </section>
-
 
         <!-- overview - today section -->
         <section>
           <h2>Overview - Today</h2>
           <div class="overview-today grid">
-
-            <div class=" bg-card overview-card">
+            <div class="bg-card overview-card">
               <div class="flex margin">
                 <p class="secondary-clr">Page Views</p>
-                <img src="images/icon-facebook.svg" alt="">
+                <img src="images/icon-facebook.svg" alt="" />
               </div>
               <div class="flex">
                 <p class="fs-600 fw-bold">87</p>
@@ -113,7 +132,7 @@
             <div class="bg-card overview-card">
               <div class="flex margin">
                 <p class="secondary-clr">Likes</p>
-                <img src="images/icon-facebook.svg" alt="">
+                <img src="images/icon-facebook.svg" alt="" />
               </div>
               <div class="flex">
                 <p class="fs-600 fw-bold">52</p>
@@ -124,7 +143,7 @@
             <div class="bg-card overview-card">
               <div class="flex margin">
                 <p class="secondary-clr">Likes</p>
-                <img src="images/icon-instagram.svg" alt="">
+                <img src="images/icon-instagram.svg" alt="" />
               </div>
               <div class="flex">
                 <p class="fs-600 fw-bold">5462</p>
@@ -135,7 +154,7 @@
             <div class="bg-card overview-card">
               <div class="flex margin">
                 <p class="secondary-clr">Profile Views</p>
-                <img src="images/icon-instagram.svg" alt="">
+                <img src="images/icon-instagram.svg" alt="" />
               </div>
               <div class="flex">
                 <p class="fs-600 fw-bold">52K</p>
@@ -146,7 +165,7 @@
             <div class="bg-card overview-card">
               <div class="flex margin">
                 <p class="secondary-clr">Retweets</p>
-                <img src="images/icon-twitter.svg" alt="">
+                <img src="images/icon-twitter.svg" alt="" />
               </div>
               <div class="flex">
                 <p class="fs-600 fw-bold">117</p>
@@ -157,7 +176,7 @@
             <div class="bg-card overview-card">
               <div class="flex margin">
                 <p class="secondary-clr">Likes</p>
-                <img src="images/icon-twitter.svg" alt="">
+                <img src="images/icon-twitter.svg" alt="" />
               </div>
               <div class="flex">
                 <p class="fs-600 fw-bold">507</p>
@@ -168,7 +187,7 @@
             <div class="bg-card overview-card">
               <div class="flex margin">
                 <p class="secondary-clr">Likes</p>
-                <img src="images/icon-youtube.svg" alt="">
+                <img src="images/icon-youtube.svg" alt="" />
               </div>
               <div class="flex">
                 <p class="fs-600 fw-bold">107</p>
@@ -179,7 +198,7 @@
             <div class="bg-card overview-card">
               <div class="flex margin">
                 <p class="secondary-clr">Total Views</p>
-                <img src="images/icon-youtube.svg" alt="">
+                <img src="images/icon-youtube.svg" alt="" />
               </div>
               <div class="flex">
                 <p class="fs-600 fw-bold">1407</p>
@@ -189,9 +208,8 @@
           </div>
         </section>
       </div>
-
     </main>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
